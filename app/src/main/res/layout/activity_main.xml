@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBlack"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/ViewCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|right"
+            android:hint="@string/Zero"
+            android:textSize="25sp"
+            android:textColor="@color/colorSnow">
+
+        </TextView>
+        <TextView
+            android:id="@+id/Vivod"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|right"
+            android:hint="@string/Zero"
+            android:textSize="20sp"
+            android:textColor="@color/colorSnow">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/Ca"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="@string/C" />
+
+            <Button
+                android:id="@+id/PlusMinus"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="@string/PlusMinus" />
+
+            <Button
+                android:id="@+id/percent"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="@string/Precent" />
+
+            <Button
+                android:id="@+id/division"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="@string/Devision" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/One"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="@string/One" />
+
+            <Button
+                android:id="@+id/Two"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Two" />
+
+            <Button
+                android:id="@+id/Three"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="@string/Three" />
+            <Button
+                android:id="@+id/X"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="@string/X" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Four"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="@string/Four" />
+
+            <Button
+                android:id="@+id/Five"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="@string/Five" />
+
+            <Button
+                android:id="@+id/Six"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="@string/Six" />
+            <Button
+                android:id="@+id/Minus"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="@string/Minus" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Seven"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="@string/Seven" />
+
+            <Button
+                android:id="@+id/Eight"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Eight" />
+
+            <Button
+                android:id="@+id/Nine"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Nine" />
+            <Button
+                android:id="@+id/Plus"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="@string/Plus" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:id="@+id/Switch"
+                android:text="@string/Switch"
+                android:gravity="center">
+            </Button>
+
+            <Button
+                android:id="@+id/Zero"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Zero"
+                android:textSize="25sp">
+            </Button>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:textSize="25sp"
+                android:id="@+id/Point"
+                android:layout_weight="1"
+                android:text="@string/Point"
+                android:gravity="center">
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:textSize="25sp"
+                android:id="@+id/equall"
+                android:layout_weight="1"
+                android:text="@string/Equall"
+                android:gravity="center">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:id="@+id/edit_text"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnOk"
+                android:text="@string/OK"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/SwitchSecond"
+                android:text="@string/Switch"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
