@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         SwitchSecond = findViewById(R.id.SwitchSecond);
         frameLayout.setVisibility(View.VISIBLE);
         ok = findViewById(R.id.btnOk);
-        editText.findViewById(R.id.edit_text);
+        editText = findViewById(R.id.edit_text);
 
     }
     private void visible(){
@@ -126,10 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     LoadImg();
-                } else {
-                    // permission denied
                 }
-                return;
         }
     }
 }
