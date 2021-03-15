@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
     public static final int REQUEST_CODE_PERMISSION_READ_STORAGE = 10;
     public static final int REQUEST_CODE_PERMISSION_WRITE_STORAGE = 11;
 
-    Button Switch;
-    Button SwitchSecond;
-    Button ok;
-    FrameLayout frameLayout;
-    ImageView view;
-    EditText editText;
+    private Button switchFirst;
+    private Button switchSecond;
+    private Button ok;
+    private FrameLayout frameLayout;
+    private ImageView view;
+    private EditText editText;
 
 
     @Override
@@ -62,16 +62,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void init(){
-        frameLayout = findViewById(R.id.frameLayout);
-        Switch = findViewById(R.id.Switch);
-        SwitchSecond = findViewById(R.id.SwitchSecond);
+        frameLayout = findViewById(R.id.frame_layout);
+        switchFirst = findViewById(R.id.switch_first);
+        switchSecond = findViewById(R.id.switchSecond);
         frameLayout.setVisibility(View.VISIBLE);
-        ok = findViewById(R.id.btnOk);
+        ok = findViewById(R.id.btn_ok);
         editText = findViewById(R.id.edit_text);
 
     }
     private void visible(){
-        Switch.setOnClickListener(new View.OnClickListener() {
+        switchFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 frameLayout.setVisibility(View.VISIBLE);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void switchVisible(){
-        SwitchSecond.setOnClickListener(new View.OnClickListener() {
+        switchSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 frameLayout.setVisibility(View.GONE);
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     private void LoadImg()
     {
         String link = editText.getText().toString();
-        view =  findViewById(R.id.imageView);
+        view =  findViewById(R.id.image_view);
         if (isExternalStorageWritable()) {
 
             File logFile = new File(getApplicationContext().getExternalFilesDir(null),"log.txt");
